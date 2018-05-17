@@ -8,6 +8,6 @@ public class Palindrome {
         int lastIndex = abba.length() - 1;
 
         return IntStream.range(0, abba.length() / 2)
-                        .allMatch(i -> abba.charAt(i) == lastIndex - i);
+                        .allMatch(i -> abba.charAt(i) == abba.charAt(lastIndex - i));
     }
 }
